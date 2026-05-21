@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="border-t border-[#1E1E2E] py-10 px-4 sm:px-6">
@@ -17,9 +19,17 @@ export default function Footer() {
           para quem merecia ter acesso antes · Acessa IA
         </p>
 
-        <p className="font-dm text-[#2E2E3E] text-xs">
-          © {new Date().getFullYear()}
-        </p>
+        <div className="flex items-center gap-4">
+          <Link
+            href="/privacidade"
+            className="font-dm text-text-muted hover:text-primary-light transition-colors text-xs"
+          >
+            Privacidade
+          </Link>
+          <p className="font-dm text-[#2E2E3E] text-xs">
+            © {new Date().getFullYear()}
+          </p>
+        </div>
       </div>
     </footer>
   );
