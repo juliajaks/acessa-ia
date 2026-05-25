@@ -87,10 +87,19 @@ export default function PrivacidadePage() {
           ))}
         </div>
 
-        <div className="border-t border-[#1E1E2E] mt-14 pt-10">
+        <div className="border-t border-[#1E1E2E] mt-14 pt-10 space-y-6">
           <p className="font-syne font-semibold text-primary-light text-lg leading-relaxed">
             O Acessa IA acredita que educação de qualidade não deveria custar
             nada — nem dinheiro, nem privacidade.
+          </p>
+          <p className="font-dm text-text-secondary text-sm leading-relaxed">
+            Dúvidas sobre esta política? Fala com a gente:{" "}
+            <a
+              href="mailto:acessaiabrasil@gmail.com"
+              className="text-primary-light hover:underline"
+            >
+              acessaiabrasil@gmail.com
+            </a>
           </p>
         </div>
       </section>
